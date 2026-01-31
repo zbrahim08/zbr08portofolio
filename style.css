@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at top, #222, #000);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  opacity: .6;
+  margin-bottom: 30px;
+}
+
+/* Spotify-style player */
+.spotify-player {
+  display: flex;
+  gap: 16px;
+  background: #181818;
+  padding: 16px;
+  border-radius: 16px;
+  width: 420px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.7);
+}
+
+.cover {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+  text-align: left;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.artist {
+  font-size: 13px;
+  opacity: .7;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#playBtn {
+  background: #1db954;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  transition: transform .15s ease;
+}
+
+#playBtn:hover {
+  transform: scale(1.1);
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  opacity: .85;
+}
+
+input[type=range] {
+  flex: 1;
+  accent-color: #1db954;
+}
